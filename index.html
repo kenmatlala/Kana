@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- =========================
+         BASIC META
+    ========================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KANO | Free Tools Built With Heart</title>
+
+    <!-- =========================
+         SEO + SOCIAL SHARING META
+    ========================== -->
+    <meta
+      name="description"
+      content="KANO creates free tools and resources built with heart. Explore free digital products and support the mission to keep developing."
+    />
+    <meta
+      name="keywords"
+      content="KANO, free tools, digital products, community, support, South Africa, creators"
+    />
+    <meta name="author" content="KANO" />
+    <link rel="canonical" href="https://kanasecure.co.za/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KANO | Free Tools Built With Heart" />
+    <meta
+      property="og:description"
+      content="Explore free security tools and products from KANO. Built to help people — supported by the community."
+    />
+    <meta property="og:url" content="https://kanasecure.co.za/" />
+    <meta
+      property="og:image"
+      content="https://kanasecure.co.za/assets/poster.png"
+    />
+    <meta property="og:image:type" content="poster/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KANO | Free Tools Built With Heart" />
+    <meta
+      name="twitter:description"
+      content="Explore free tools and products from KANO."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kanasecure.co.za/assets/poster.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         BACKGROUND VIDEO
+    ========================== -->
+    <div class="bg">
+      <video
+        class="bgVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/poster.png"
+      >
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="bgOverlay"></div>
+    </div>
+
+    <!-- =========================
+         TOP NAV
+    ========================== -->
+    <header class="topbar" id="topbar">
+      <div class="topbarInner">
+        <button class="iconBtn" id="menuToggle" aria-label="Open menu">
+          <span class="icon iconHamburger"></span>
+        </button>
+
+        <a class="brand" href="#home">
+          <img src="assets/brand/logo.png" alt="KANO Logo" class="brandLogo" />
+        </a>
+
+        <a class="supportBtn" href="#support">
+          <span class="heart">❤</span>
+          <span class="supportText">SUPPORT US</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- =========================
+         MENU OVERLAY
+    ========================== -->
+    <div class="menuOverlay" id="menuOverlay">
+      <div class="menuBackdrop" id="menuBackdrop"></div>
+
+      <nav class="menuCard">
+        <div class="menuPill">MENU</div>
+
+        <a class="menuItem" href="#home" data-menu-link>HOME</a>
+        <a class="menuItem" href="#products" data-menu-link>PRODUCTS</a>
+        <a class="menuItem" href="#about" data-menu-link>ABOUT</a>
+        <a class="menuItem" href="#contact" data-menu-link>☎CONTACT</a>
+
+        <a class="menuSupport" href="#support" data-menu-link> ❤ SUPPORT US </a>
+      </nav>
+    </div>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="page">
+      <!-- Home hero -->
+      <section class="home-section">
+        <div class="home-container">
+          <div class="images-container">
+            <img
+              src="./assets/img/lock.png"
+              alt="Security Lock"
+              class="lock-image"
+            />
+            <img src="./assets/img/phone.png" alt="Phone" class="phone-image" />
+          </div>
+
+          <div class="content-container">
+            <h1 class="animated-heading">
+              <span class="word">
+                <span class="letter">S</span><span class="letter">e</span
+                ><span class="letter">c</span><span class="letter">u</span
+                ><span class="letter">r</span><span class="letter">i</span
+                ><span class="letter">t</span><span class="letter">y</span>
+              </span>
+
+              <span class="gap"></span>
+
+              <span class="word">
+                <span class="letter">f</span><span class="letter">o</span
+                ><span class="letter">r</span>
+              </span>
+
+              <span class="gap"></span>
+
+              <span class="word">
+                <span class="letter">R</span><span class="letter">e</span
+                ><span class="letter">a</span><span class="letter">l</span>
+              </span>
+
+              <span class="gap"></span>
+
+              <span class="word">
+                <span class="letter">P</span><span class="letter">e</span
+                ><span class="letter">o</span><span class="letter">p</span
+                ><span class="letter">l</span><span class="letter">e</span>
+              </span>
+            </h1>
+
+            <p class="description">
+              <span class="kana">KANA</span> is built for a world that never
+              stops pulling for our attention. While the
+              <span class="web">WEB takes</span> from us,
+              <span class="web">tracks us, and tempts us</span>,
+              <span class="we">we</span> create tools that
+              <span class="web"
+                >protect, quiet, and give control back to people.</span
+              >
+              We guard privacy, reduce digital harm, help break unhealthy online
+              habits, and keep children safe from things they shouldn't have to
+              see. <span class="kana">KANA</span> is not security for systems or
+              companies –
+              <span class="web"
+                >it is security for real people, living real lives,
+                online.</span
+              >
+            </p>
+
+            <button class="cta-button">SEE MORE →</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section aboutSection" id="about">
+        <div class="container aboutWrap">
+          <!-- ROW 1 -->
+          <div class="aboutRow">
+            <div class="aboutText">
+              <p class="aboutKicker reveal fade">ABOUT US</p>
+
+              <h2 class="aboutHeading js-pop-heading reveal pop">
+                KANA began with a conviction to protect what matters.
+              </h2>
+
+              <p class="aboutBody reveal fade">
+                What started as an effort to shield ourselves from powerful
+                companies harvesting our data became something deeper. Through
+                prayer and conviction, we were led to build tools that help
+                people struggling with pornography — not with condemnation, but
+                with truth, accountability, and grace. From there, the calling
+                expanded to protecting children and families in an increasingly
+                hostile digital world.
+              </p>
+
+              <p class="aboutBody reveal fade">
+                We believe technology should serve people, not enslave them.
+              </p>
+
+              <p class="aboutBody reveal fade">
+                <span class="aboutBrand">KANA</span> builds free digital tools
+                that help individuals guard their privacy, break harmful online
+                patterns, and protect children from content that damages hearts
+                and minds. Our work is rooted in faith, guided by
+                responsibility, and driven by love for people.
+              </p>
+
+              <div class="aboutActions reveal fade">
+                <a class="aboutBtn" href="#products">SEE PRODUCTS →</a>
+              </div>
+            </div>
+
+            <div class="aboutMedia reveal mediaLeft">
+              <img
+                src="assets/img/about/1.png"
+                alt="KANA protecting what matters"
+                class="aboutImg aboutImgTall"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <!-- ROW 2 -->
+          <div class="aboutRow reverse">
+            <div class="aboutText">
+              <h2 class="aboutHeading js-pop-heading reveal pop">
+                Protection should never be a privilege.
+              </h2>
+
+              <p class="aboutBody reveal fade">
+                As we grow, we plan to expand beyond browser tools into systems
+                for phones and apps, always keeping our tools free — because
+                protection should never be a privilege. Everyone has the right
+                to dignity, privacy, and the freedom to say no to being watched.
+              </p>
+
+              <p class="aboutBody reveal fade">
+                If you have ideas or suggestions, you can share them through the
+                suggestions form linked on our Contact page. And if you love and
+                believe in the work we are doing, and would like to support us
+                so we can keep innovating, we invite you to visit our Support
+                page.
+              </p>
+
+              <div class="aboutActions reveal fade">
+                <a class="aboutBtn" href="#support">SUPPORT THE MISSION ❤</a>
+              </div>
+            </div>
+
+            <div class="aboutMedia reveal mediaRight">
+              <img
+                src="assets/img/about/2.png"
+                alt="KANA family-focused protection"
+                class="aboutImg aboutImgSquare"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section productsSection" id="products">
+        <div class="container productsWrap">
+          <!-- Header -->
+          <div class="productsHeader">
+            <h2 class="productsTitle reveal fade">PRODUCTS</h2>
+            <p class="productsSub reveal fade">
+              we create tools that protect, quiet, and give
+            </p>
+          </div>
+
+          <!-- Product 1 -->
+          <div class="productRow">
+            <a class="productText" href="products/stand-strong.html">
+              <div class="productTop reveal fade">
+                <img
+                  src="assets/img/products/logo1.png"
+                  alt="Stand Strong logo"
+                  class="productLogo"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <h3 class="productName js-pop-heading reveal pop">
+                  Stand Strong
+                </h3>
+              </div>
+
+              <p class="productDesc reveal fade">
+                Freedom starts with one choice. Stand Strong blocks lust-driven
+                content and helps you walk in discipline and strength. Would you
+                like protection from lust enabled?
+              </p>
+            </a>
+
+            <a
+              class="productMedia reveal floatRight"
+              href="products/stand-strong.html"
+              aria-label="Open Stand Strong"
+            >
+              <img
+                src="assets/img/products/image1.png"
+                alt="Stand Strong preview"
+                class="productImage ring ringGold"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="productRow reverse">
+            <a class="productText" href="products/iguard.html">
+              <div class="productTop reveal fade">
+                <img
+                  src="assets/img/products/logo2.png"
+                  alt="iGuard Kids logo"
+                  class="productLogo"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <h3
+                  class="productName js-pop-heading reveal pop"
+                  href="products/iguard.html"
+                >
+                  I Guard Kids
+                </h3>
+              </div>
+
+              <p class="productDesc reveal fade">
+                It’s getting harder and harder to avoid giving children devices.
+                iGuard Kids keeps your children safe online by blocking harmful
+                content, limiting screen time, and giving parents peace of mind
+                — while letting you control what your kids can access and for
+                how long.
+              </p>
+            </a>
+
+            <a
+              class="productMedia reveal floatLeft"
+              href="products/iguard.html"
+              aria-label="Open iGuard Kids"
+            >
+              <img
+                src="assets/img/products/image2.png"
+                alt="iGuard Kids preview"
+                class="productImage ring ringGreen"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="productRow">
+            <a class="productText" href="products/email-encrypt.html">
+              <div class="productTop reveal fade">
+                <img
+                  src="assets/img/products/logo3.png"
+                  alt="Email Encrypt logo"
+                  class="productLogo"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <h3 class="productName js-pop-heading reveal pop">
+                  EMAIL ENCRYPT
+                </h3>
+              </div>
+
+              <p class="productDesc reveal fade">
+                We weren’t sure whether to release this, out of concern it could
+                be misused. But this extension delivers one of the highest
+                levels of email encryption available today. It was born from the
+                realization that major mail providers read private messages
+                without consent — and the belief that privacy is a right, not a
+                privilege.
+              </p>
+            </a>
+
+            <a
+              class="productMedia reveal floatRight"
+              href="products/email-encrypt.html"
+              aria-label="Open Email Encrypt"
+            >
+              <img
+                src="assets/img/products/image3.png"
+                alt="Email Encrypt preview"
+                class="productImage ring ringPink"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contactSection" id="contact">
+        <div class="container contactWrap">
+          <div class="contactHeader">
+            <h2 class="contactHeading js-pop-heading reveal pop">Contact Us</h2>
+            <p class="contactSub reveal fade">
+              Send us a message — we’ll get back to you as soon as we can.
+            </p>
+          </div>
+
+          <div class="contactGrid">
+            <!-- FORM -->
+            <div class="contactFormCard reveal fade">
+              <form
+                class="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+              >
+                <label class="field">
+                  <span class="fieldLabel">Name</span>
+                  <input
+                    class="fieldInput"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Email</span>
+                  <input
+                    class="fieldInput"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Message</span>
+                  <textarea
+                    class="fieldInput fieldTextArea"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="contactSubmit reveal fade" type="submit">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+
+            <!-- SUGGESTION VIDEO (clickable) -->
+            <div class="contactMedia">
+              <a
+                class="suggestionLink reveal fade"
+                href="https://forms.gle/bh7XSf292nadt4zf9"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open suggestion form"
+              >
+                <video
+                  class="suggestionVideo"
+                  id="suggestionVideo"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="assets/img/contact/poster.jpg"
+                >
+                  <source src="assets/img/contact/vid.mp4" type="video/mp4" />
+                </video>
+              </a>
+
+              <div class="contactEmail reveal fade" aria-label="Contact email">
+                <span class="mailDot" aria-hidden="true">✉</span>
+                <a class="mailLink" href="mailto:contact@kanasecure.co.za"
+                  >contact@kanasecure.co.za</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section supportSection" id="support">
+        <div class="container supportWrap">
+          <div class="supportRow">
+            <!-- LEFT: everything stacked together -->
+            <div class="supportLeft">
+              <h2 class="supportHeading js-pop-heading reveal pop">
+                Support Us
+              </h2>
+
+              <p class="supportSub reveal fade">
+                All Kana products are free because we believe access to powerful
+                tools should not depend on money.
+              </p>
+
+              <p class="supportBody reveal fade">
+                If you believe in what we’re building and want to help us
+                continue developing and improving, you’re welcome to support us
+                by using any of the options on the right — or by emailing our
+                support.
+              </p>
+              <br /><br />
+              <div class="supportEmail reveal fade" aria-label="Support email">
+                <span class="supportMailDot" aria-hidden="true">✉</span>
+                <a
+                  class="supportMailLink"
+                  href="mailto:support@kanasecure.co.za"
+                >
+                  support@kanasecure.co.za
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: orbit -->
+            <div
+              class="supportOrbitWrap reveal fade"
+              aria-label="Support options"
+            >
+              <div class="supportOrbit" id="supportOrbit">
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Google Pay"
+                  data-orbit-item
+                >
+                  <img
+                    src="assets/img/support/googlepay.png"
+                    alt="Google Pay"
+                  />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Ozow"
+                  data-orbit-item
+                >
+                  <img src="assets/img/support/ozow.png" alt="Ozow" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://pay.capitecbank.co.za/payme/VIGXRJ"
+                  aria-label="Capitec Pay"
+                  data-orbit-item
+                >
+                  <img src="assets/img/support/capitec.png" alt="Capitec Pay" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://paypal.me/kanasecure"
+                  aria-label="PayPal"
+                  data-orbit-item
+                >
+                  <img src="assets/img/support/paypal.png" alt="PayPal" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="buymeacoffee.com/kopanoel"
+                  aria-label="Buy Me A Coffee"
+                  data-orbit-item
+                >
+                  <img
+                    src="assets/img/support/buymeacoffee.png"
+                    alt="Buy Me A Coffee"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="footerInner container">
+        <div class="footerTop">
+          <div class="footerBrand">
+            <img src="assets/brand/logo.png" class="footerLogo" />
+            <p class="footerTagline">
+              Building free tools with heart. Support the mission to keep
+              developing.
+            </p>
+          </div>
+
+          <div class="footerCols">
+            <div class="footerCol">
+              <h4>Explore</h4>
+              <a href="#home">Home</a>
+              <a href="#products">Products</a>
+              <a href="#about">About</a>
+            </div>
+
+            <div class="footerCol">
+              <h4>Legal</h4>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerSocials">
+          <a
+            href="https://www.instagram.com/YOUR_HANDLE"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            class="footerSocial"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/YOUR_PAGE"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            class="footerSocial"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@YOUR_HANDLE"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+            class="footerSocial"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/YOUR_PAGE"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            class="footerSocial"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footerBottom">
+          <small>© <span id="year"></span> KANO</small>
+          <a class="footerSupport" href="#support">❤ Support Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
