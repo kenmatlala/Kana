@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANO | iGuard Kids</title>
+
+    <meta
+      name="description"
+      content="iGuard Kids helps keep children safe online by blocking harmful content, limiting screen time, and giving parents peace of mind."
+    />
+
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Shared + Page CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./iguard.css" />
+  </head>
+
+  <body>
+    <!-- BACKGROUND VIDEO -->
+    <div class="bg">
+      <video
+        class="bgVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="../assets/poster.png"
+      >
+        <source src="../assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="bgOverlay"></div>
+    </div>
+
+    <!-- TOP NAV -->
+    <header class="topbar" id="topbar">
+      <div class="topbarInner">
+        <button
+          class="iconBtn"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="icon iconHamburger"></span>
+        </button>
+
+        <a class="brand" href="../index.html#home" aria-label="Go to home">
+          <img
+            src="../assets/brand/logo.png"
+            alt="KANO Logo"
+            class="brandLogo"
+          />
+        </a>
+
+        <a class="supportBtn" href="#support">
+          <span class="heart">❤</span>
+          <span class="supportText">SUPPORT US</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- MENU OVERLAY -->
+    <div class="menuOverlay" id="menuOverlay" aria-hidden="true">
+      <div class="menuBackdrop" id="menuBackdrop"></div>
+
+      <nav class="menuCard" aria-label="Menu">
+        <div class="menuPill">MENU</div>
+
+        <a class="menuItem" href="../index.html#home" data-menu-link>HOME</a>
+        <a class="menuItem" href="../index.html#products" data-menu-link
+          >PRODUCTS</a
+        >
+        <a class="menuItem" href="../index.html#about" data-menu-link>ABOUT</a>
+        <a class="menuItem" href="../index.html#contact" data-menu-link
+          >☎CONTACT</a
+        >
+        <a class="menuSupport" href="../index.html#support" data-menu-link
+          >❤ SUPPORT US</a
+        >
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <main class="page">
+      <!-- =========================
+           IGUARD HERO
+      ========================== -->
+      <section class="igHero" id="iguard">
+        <div class="container igWrap">
+          <h1 class="igTitle js-pop-heading reveal pop">I Guard Kids</h1>
+
+          <!-- icon + what we do row -->
+          <div class="igTopRow">
+            <div class="igIconWrap reveal fade">
+              <!-- You can change this image path if your icon is elsewhere -->
+              <img
+                src="../assets/img/iguard/2.png"
+                alt="iGuard Kids icon"
+                class="igIcon"
+                loading="eager"
+              />
+            </div>
+
+            <div class="igWhat reveal fade" style="--d: 80ms">
+              <h2 class="igWhatTitle js-pop-heading popSmall">WHAT WE DO!</h2>
+              <p class="igWhatText">
+                It’s getting harder and harder to avoid giving children devices.
+                iGuard Kids keeps your children safe online by blocking harmful
+                content, limiting screen time, and giving parents peace of mind
+                — while letting you control what your kids can access and for
+                how long.
+              </p>
+            </div>
+          </div>
+
+          <!-- extra paragraph (full width like your UI) -->
+          <p class="igPara reveal fade" style="--d: 140ms">
+            It’s getting harder and harder to avoid giving children devices.
+            iGuard Kids keeps your children safe online by blocking harmful
+            content, limiting screen time, and giving parents peace of mind —
+            while letting you control what your kids can access and for how
+            long.
+          </p>
+
+          <!-- download -->
+          <button
+            class="igDownload reveal fade"
+            style="--d: 200ms"
+            id="iguardDownloadBtn"
+            type="button"
+          >
+            <span>DOWNLOAD</span>
+            <span class="igDownloadIcon" aria-hidden="true">↓</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- =========================
+           HOW IT WORKS
+      ========================== -->
+      <section class="igHIW" id="how-it-works">
+        <div class="container igWrap">
+          <h3 class="igHIWTitle reveal fade">
+            <span class="igGradTitle">HOW</span>
+            <span class="igGradTitle2">IT WORKS</span>
+          </h3>
+          <p class="igHIWSub reveal fade" style="--d: 80ms">
+            A illustration of how the platform works
+          </p>
+
+          <div class="igFrame reveal fade" style="--d: 140ms">
+            <div class="igVideoWrap">
+              <!-- Replace VIDEO_ID with your YouTube ID -->
+              <iframe
+                class="igVideo"
+                src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                title="iGuard Kids — How it works"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           SCREENSHOTS
+      ========================== -->
+      <section class="igShots" id="screenshots">
+        <div class="container igWrap">
+          <h3 class="igShotsTitle reveal fade">
+            <span class="igShotsGrad">SCREEN</span>
+            <span class="igShotsGrad2">SHOTS</span>
+          </h3>
+          <p class="igShotsSub reveal fade" style="--d: 80ms">
+            It’s getting harder and harder
+          </p>
+
+          <div class="igGrid">
+            <!-- 1 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/1.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/1.png"
+                  alt="iGuard screenshot 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- 2 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/2.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+              style="--d: 80ms"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/2.png"
+                  alt="iGuard screenshot 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- 3 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/3.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+              style="--d: 160ms"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/3.png"
+                  alt="iGuard screenshot 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- 4 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/4.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+              style="--d: 240ms"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/4.png"
+                  alt="iGuard screenshot 4"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- 5 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/5.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+              style="--d: 320ms"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/5.png"
+                  alt="iGuard screenshot 5"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- 6 -->
+            <button
+              class="igCard reveal fade"
+              type="button"
+              data-shot
+              data-img="../assets/img/iguard/screenshots/6.png"
+              data-title="header"
+              data-desc="It’s getting harder and harder"
+              style="--d: 400ms"
+            >
+              <div class="igCardTitle">header</div>
+              <div class="igThumbFrame">
+                <img
+                  src="../assets/img/iguard/screenshots/6.png"
+                  alt="iGuard screenshot 6"
+                  loading="lazy"
+                />
+              </div>
+              <div class="igCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="igModal" id="igModal" aria-hidden="true">
+          <div class="igModalBackdrop" data-close></div>
+
+          <div
+            class="igModalCard"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Screenshot preview"
+          >
+            <button class="igClose" type="button" aria-label="Close" data-close>
+              ×
+            </button>
+
+            <div class="igModalFrame">
+              <img id="igModalImg" src="" alt="Selected screenshot" />
+            </div>
+
+            <div class="igModalText">
+              <div class="igModalTitle" id="igModalTitle"></div>
+              <div class="igModalDesc" id="igModalDesc"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           contacts
+      ========================== -->
+      <section class="section contactSection" id="contact">
+        <div class="container contactWrap">
+          <div class="contactHeader">
+            <h2 class="contactHeading js-pop-heading reveal pop">Contact Us</h2>
+            <p class="contactSub reveal fade">
+              Send us a message — we’ll get back to you as soon as we can.
+            </p>
+          </div>
+
+          <div class="contactGrid">
+            <!-- FORM -->
+            <div class="contactFormCard reveal fade">
+              <form
+                class="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+              >
+                <label class="field">
+                  <span class="fieldLabel">Name</span>
+                  <input
+                    class="fieldInput"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Email</span>
+                  <input
+                    class="fieldInput"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Message</span>
+                  <textarea
+                    class="fieldInput fieldTextArea"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="contactSubmit reveal fade" type="submit">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+
+            <!-- SUGGESTION VIDEO (clickable) -->
+            <div class="contactMedia">
+              <a
+                class="suggestionLink reveal fade"
+                href="https://forms.gle/bh7XSf292nadt4zf9"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open suggestion form"
+              >
+                <video
+                  class="suggestionVideo"
+                  id="suggestionVideo"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="../assets/img/contact/poster.jpg"
+                >
+                  <source
+                    src="../assets/img/contact/vid.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+
+              <div class="contactEmail reveal fade" aria-label="Contact email">
+                <span class="mailDot" aria-hidden="true">✉</span>
+                <a class="mailLink" href="mailto:contact@kanasecure.co.za"
+                  >contact@kanasecure.co.za</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           support us
+      ========================== -->
+      <section class="section supportSection" id="support">
+        <div class="container supportWrap">
+          <div class="supportRow">
+            <!-- LEFT: everything stacked together -->
+            <div class="supportLeft">
+              <h2 class="supportHeading js-pop-heading reveal pop">
+                Support Us
+              </h2>
+
+              <p class="supportSub reveal fade">
+                All Kana products are free because we believe access to powerful
+                tools should not depend on money.
+              </p>
+
+              <p class="supportBody reveal fade">
+                If you believe in what we’re building and want to help us
+                continue developing and improving, you’re welcome to support us
+                by using any of the options on the right — or by emailing our
+                support.
+              </p>
+              <br /><br />
+              <div class="supportEmail reveal fade" aria-label="Support email">
+                <span class="supportMailDot" aria-hidden="true">✉</span>
+                <a
+                  class="supportMailLink"
+                  href="mailto:support@kanasecure.co.za"
+                >
+                  support@kanasecure.co.za
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: orbit -->
+            <div
+              class="supportOrbitWrap reveal fade"
+              aria-label="Support options"
+            >
+              <div class="supportOrbit" id="supportOrbit">
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Google Pay"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/googlepay.png"
+                    alt="Google Pay"
+                  />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Ozow"
+                  data-orbit-item
+                >
+                  <img src="../assets/img/support/ozow.png" alt="Ozow" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://pay.capitecbank.co.za/payme/VIGXRJ"
+                  aria-label="Capitec Pay"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/capitec.png"
+                    alt="Capitec Pay"
+                  />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://paypal.me/kanasecure"
+                  aria-label="PayPal"
+                  data-orbit-item
+                >
+                  <img src="../assets/img/support/paypal.png" alt="PayPal" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="buymeacoffee.com/kopanoel"
+                  aria-label="Buy Me A Coffee"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/buymeacoffee.png"
+                    alt="Buy Me A Coffee"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (minimal like your product pages; swap with full footer if you want) -->
+    <footer class="footer">
+      <div class="footerInner container">
+        <div class="footerTop">
+          <div class="footerBrand">
+            <img src="../assets/brand/logo.png" class="footerLogo" />
+            <p class="footerTagline">
+              Building free tools with heart. Support the mission to keep
+              developing.
+            </p>
+          </div>
+
+          <div class="footerCols">
+            <div class="footerCol">
+              <h4>Explore</h4>
+              <a href="../index.html#home">Home</a>
+              <a href="../index.html#about">About</a>
+              <a href="../index.html#products">Products</a>
+            </div>
+
+            <div class="footerCol">
+              <h4>Legal</h4>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerSocials">
+          <a
+            href="https://www.instagram.com/YOUR_HANDLE"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            class="footerSocial"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/YOUR_PAGE"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            class="footerSocial"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@YOUR_HANDLE"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+            class="footerSocial"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/YOUR_PAGE"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            class="footerSocial"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footerBottom">
+          <small>© <span id="year"></span> KANO</small>
+          <a class="footerSupport" href="#support">❤ Support Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared + Page JS -->
+    <script src="../app.js"></script>
+    <script src="./iguard.js"></script>
+  </body>
+</html>

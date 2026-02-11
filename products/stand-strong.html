@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KANO | Stand Strong</title>
+
+    <meta
+      name="description"
+      content="Stand Strong is a free faith-based web extension that helps people break unhealthy online habits by blocking explicit content and supporting streak-based progress."
+    />
+
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Shared site CSS + page CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./stand-strong.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         BACKGROUND VIDEO
+    ========================== -->
+    <div class="bg">
+      <video
+        class="bgVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="../assets/poster.png"
+      >
+        <source src="../assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="bgOverlay"></div>
+    </div>
+
+    <!-- =========================
+         TOP NAV
+    ========================== -->
+    <header class="topbar" id="topbar">
+      <div class="topbarInner">
+        <button
+          class="iconBtn"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="icon iconHamburger"></span>
+        </button>
+
+        <a class="brand" href="../index.html#home" aria-label="Go to home">
+          <img
+            src="../assets/brand/logo.png"
+            alt="KANO Logo"
+            class="brandLogo"
+          />
+        </a>
+
+        <a class="supportBtn" href="../index.html#support">
+          <span class="heart">❤</span>
+          <span class="supportText">SUPPORT US</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- =========================
+         MENU OVERLAY
+    ========================== -->
+    <div class="menuOverlay" id="menuOverlay" aria-hidden="true">
+      <div class="menuBackdrop" id="menuBackdrop"></div>
+
+      <nav class="menuCard" aria-label="Menu">
+        <div class="menuPill">MENU</div>
+
+        <a class="menuItem" href="../index.html#home" data-menu-link>HOME</a>
+        <a class="menuItem" href="../index.html#products" data-menu-link
+          >PRODUCTS</a
+        >
+        <a class="menuItem" href="../index.html#about" data-menu-link>ABOUT</a>
+        <a class="menuItem" href="../index.html#contact" data-menu-link
+          >☎CONTACT</a
+        >
+
+        <a class="menuSupport" href="../index.html#support" data-menu-link>
+          ❤ SUPPORT US
+        </a>
+      </nav>
+    </div>
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main class="page">
+      <!-- =========================
+           HERO TOP (Image + Title/Quote/Download)
+      ========================== -->
+      <section class="ssHeroTop" id="standstrong">
+        <div class="container ssHeroRow">
+          <!-- IMAGE (slides in from right) -->
+          <div class="ssMedia reveal slide-right">
+            <img
+              class="ssImg"
+              src="../assets/img/standstrong/1.png"
+              alt="Stand Strong promotional artwork"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="ssRight">
+            <h1 class="ssTitle js-pop-heading reveal pop">Stand Strong</h1>
+
+            <p class="ssQuote reveal fade" style="--d: 80ms">
+              “For What Greater Prison Is There Than Lust, For its Embrace
+              feeleth like Freedom, Till Thou Wishest to Cease.” I pray that you
+              break free!
+            </p>
+
+            <button
+              class="ssBtn reveal fade"
+              style="--d: 160ms"
+              id="downloadBtn"
+              type="button"
+            >
+              <span>DOWNLOAD</span>
+              <span class="ssBtnIcon" aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           WHY (Full width under the hero row)
+      ========================== -->
+      <section class="ssWhy">
+        <div class="container ssWhyInner">
+          <h2 class="ssWhyTitle reveal fade">WHY?</h2>
+
+          <div class="ssWhyText reveal fade" style="--d: 100ms">
+            <p>
+              In my first group of peer <strong>reviews</strong> I was asked why
+              I didn’t make this accommodating for everyone — why I made it
+              Christian Faith Based. And the honest truth is that I do not know
+              any other way to overcome lust/pornography addictions! any other
+              way would not be true to my experience of deliverance. For
+              context, I’d like to make this statement: "I believe we are spirit
+              beings with a soul, housed in a body."" That belief will make
+              sense closer to the end.
+            </p>
+
+            <p>
+              My story began when I was about seven years old, with a Sunday
+              newspaper that had a weekly “Sunday babe.” Don’t laugh—the
+              internet was foreign at the time. Little did I know I had opened a
+              door that would be far too difficult to close. Later, websites
+              like Waptrick came along, friends indoctrination, and the years
+              went by until it became normal. I no longer even knew why I was
+              doing it.
+            </p>
+
+            <p>
+              I remember thinking, “But this is my body — why can I not break
+              free from this thing?” I felt deeply out of control, a lost sense
+              of self. I was born and raised in the church, raised in a
+              Christian home, yet this shadow lurked over me. A desire for
+              intimacy, but with a false sense of what intimacy truly was.
+            </p>
+
+            <p>
+              My will—my spirit—was weak. And when you keep disappointing
+              yourself, your confidence in yourself dwindles, because you and I
+              both wouldn’t trust someone who says they will stop and then keeps
+              doing it. That time Pornography is such an embarrassing struggle
+              to admit to, or even to admit that you need help from. So you
+              become isolated, beaten and tired believing - “This is the rock I
+              will die on.”
+            </p>
+
+            <p>
+              Then you grow up and double down, believing that once someone is
+              there — once the urge has a body to satisfy it — you will no
+              longer need these things. You tell yourself you can overcome it as
+              long as there is somebody. That was the biggest lie I ever told
+              myself, living a life filled with the empty promises of sin. I
+              just could not stop.
+            </p>
+
+            <p>When Paul writes in <strong>Romans 7:15–20</strong>:</p>
+
+            <blockquote class="ssQuoteBlock">
+              <sup>15</sup>I do not understand what I do. For what I want to do
+              I do not do, but what I hate I do. <sup>16</sup> And if I do what
+              I do not want to do, I agree that the law is good.
+              <sup>17</sup> As it is, it is no longer I myself who do it, but it
+              is sin living in me. <sup>18</sup> For I know that good itself
+              does not dwell in me, that is, in my sinful nature.[c] For I have
+              the desire to do what is good, but I cannot carry it out.
+              <sup>19</sup> For I do not do the good I want to do, but the evil
+              I do not want to do—this I keep on doing. <sup>20</sup> Now if I
+              do what I do not want to do, it is no longer I who do it, but it
+              is sin living in me that does it.
+            </blockquote>
+
+            <p>
+              He was frustrated, feeling like he was not in control of himself.
+              Then in verses <strong>21–24</strong> he says:
+            </p>
+
+            <blockquote class="ssQuoteBlock">
+              <sup>21</sup> So I find this law at work: Although I want to do
+              good, evil is right there with me. <sup>22</sup> For in my inner
+              being I delight in God’s law; <sup>23</sup> but I see another law
+              at work in me, waging war against the law of my mind and making me
+              a prisoner of the law of sin at work within me. <sup>24</sup> What
+              a wretched man I am! Who will rescue me from this body that is
+              subject to death?
+            </blockquote>
+
+            <p>
+              I relate to that deeply. I felt like a prisoner in my own body,
+              wanting to be freed from this sin. Knowing the teachings of the
+              Bible, I knew it was wrong — I was trapped.
+            </p>
+
+            <p>
+              Then I got born again… again. Twice. And this time it was real. I
+              prayed and read the Word because I wanted to, not because of my
+              parents or because everyone was doing it. And one day I realised I
+              no longer had the desire to give in to the desires of the flesh. I
+              could ignore its screams for self-indulgence.
+            </p>
+
+            <p>
+              Even while building this tool, I noticed that when testing failed,
+              I would get frustrated and angry—and I realised something: lust is
+              simply a symptom of an unnurtured spirit and soul.
+            </p>
+
+            <p>
+              The word became alive to me—edifying and filling: so in vs
+              <strong>25</strong> when Paul said:
+            </p>
+
+            <blockquote class="ssQuoteBlock">
+              <sup>25</sup> Thanks be to God, who delivers me through Jesus
+              Christ our Lord!
+            </blockquote>
+
+            <p>I completely understood.</p>
+
+            <p>
+              So when it fell upon my spirit to build this tool, I did not argue
+              or hesitate. please note that It is not some magic trick. It is
+              not a pill that fixes overnight. But it is the beginning of a
+              journey of deliverance. the decision to feed your spirit man, to
+              feed you.
+            </p>
+
+            <p>
+              If it counts for anything, I see your struggle and i know it. I
+              see you. And I pray this becomes the beginning of you regaining
+              control over the flesh. because ...
+            </p>
+
+            <p><strong>This is your body, after all.</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     HOW IT WORKS
+      ========================= -->
+      <section class="hiw" id="how-it-works">
+        <div class="container hiwInner">
+          <!-- Top button (same style as stand strong download) -->
+          <button
+            class="hiwTopBtn reveal fade"
+            id="hiwDownloadBtn"
+            type="button"
+          >
+            <span>DOWNLOAD</span>
+            <span class="hiwTopBtnIcon" aria-hidden="true">↓</span>
+          </button>
+
+          <h2 class="hiwTitle reveal fade">HOW IT WORKS</h2>
+          <p class="hiwSub reveal fade" style="--d: 80ms">
+            It’s getting harder and harder
+          </p>
+
+          <!-- YouTube frame -->
+          <div class="hiwFrame reveal fade" style="--d: 140ms">
+            <div class="hiwVideoWrap">
+              <!-- Replace VIDEO_ID with your real YouTube ID -->
+              <iframe
+                class="hiwVideo"
+                src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                title="Stand Strong — How it works"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Screenshots -->
+          <h3 class="hiwShotsTitle reveal fade" style="--d: 180ms">
+            <span class="hiwShotsGrad">SCREEN SHOTS</span>
+          </h3>
+          <p class="hiwSub reveal fade" style="--d: 220ms">
+            It’s getting harder and harder
+          </p>
+
+          <div class="hiwGrid">
+            <!-- Card 1 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 0ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/1.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/1.jpg"
+                  alt="Stand Strong screenshot 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- Card 2 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 70ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/2.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/2.jpg"
+                  alt="Stand Strong screenshot 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- Card 3 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 140ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/3.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/3.jpg"
+                  alt="Stand Strong screenshot 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- Card 4 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 210ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/4.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/4.jpg"
+                  alt="Stand Strong screenshot 4"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- Card 5 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 280ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/5.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/5.jpg"
+                  alt="Stand Strong screenshot 5"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+
+            <!-- Card 6 -->
+            <button
+              class="hiwCard reveal fade"
+              type="button"
+              style="--d: 350ms"
+              data-shot
+              data-img="../assets/img/standstrong/screenshots/6.jpg"
+              data-title="Header"
+              data-desc="It’s getting harder and harder"
+            >
+              <div class="hiwCardTitle">header</div>
+              <div class="hiwThumbFrame">
+                <img
+                  src="../assets/img/standstrong/screenshots/6.jpg"
+                  alt="Stand Strong screenshot 6"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="hiwCardDesc">It’s getting harder<br />and harder</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal (pop-out) -->
+        <div class="hiwModal" id="hiwModal" aria-hidden="true">
+          <div class="hiwModalBackdrop" data-close></div>
+
+          <div
+            class="hiwModalCard"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Screenshot preview"
+          >
+            <button
+              class="hiwClose"
+              type="button"
+              aria-label="Close"
+              data-close
+            >
+              ×
+            </button>
+
+            <div class="hiwModalFrame">
+              <img id="hiwModalImg" src="" alt="Selected screenshot" />
+            </div>
+
+            <div class="hiwModalText">
+              <div class="hiwModalTitle" id="hiwModalTitle"></div>
+              <div class="hiwModalDesc" id="hiwModalDesc"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contactSection" id="contact">
+        <div class="container contactWrap">
+          <div class="contactHeader">
+            <h2 class="contactHeading js-pop-heading reveal pop">Contact Us</h2>
+            <p class="contactSub reveal fade">
+              Send us a message — we’ll get back to you as soon as we can.
+            </p>
+          </div>
+
+          <div class="contactGrid">
+            <!-- FORM -->
+            <div class="contactFormCard reveal fade">
+              <form
+                class="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+              >
+                <label class="field">
+                  <span class="fieldLabel">Name</span>
+                  <input
+                    class="fieldInput"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Email</span>
+                  <input
+                    class="fieldInput"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+
+                <label class="field reveal fade">
+                  <span class="fieldLabel">Message</span>
+                  <textarea
+                    class="fieldInput fieldTextArea"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="contactSubmit reveal fade" type="submit">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+
+            <!-- SUGGESTION VIDEO (clickable) -->
+            <div class="contactMedia">
+              <a
+                class="suggestionLink reveal fade"
+                href="https://forms.gle/bh7XSf292nadt4zf9"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open suggestion form"
+              >
+                <video
+                  class="suggestionVideo"
+                  id="suggestionVideo"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="../assets/img/contact/poster.jpg"
+                >
+                  <source
+                    src="../assets/img/contact/vid.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+
+              <div class="contactEmail reveal fade" aria-label="Contact email">
+                <span class="mailDot" aria-hidden="true">✉</span>
+                <a class="mailLink" href="mailto:contact@kanasecure.co.za"
+                  >contact@kanasecure.co.za</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section supportSection" id="support">
+        <div class="container supportWrap">
+          <div class="supportRow">
+            <!-- LEFT: everything stacked together -->
+            <div class="supportLeft">
+              <h2 class="supportHeading js-pop-heading reveal pop">
+                Support Us
+              </h2>
+
+              <p class="supportSub reveal fade">
+                All Kana products are free because we believe access to powerful
+                tools should not depend on money.
+              </p>
+
+              <p class="supportBody reveal fade">
+                If you believe in what we’re building and want to help us
+                continue developing and improving, you’re welcome to support us
+                by using any of the options on the right — or by emailing our
+                support.
+              </p>
+              <br /><br />
+              <div class="supportEmail reveal fade" aria-label="Support email">
+                <span class="supportMailDot" aria-hidden="true">✉</span>
+                <a
+                  class="supportMailLink"
+                  href="mailto:support@kanasecure.co.za"
+                >
+                  support@kanasecure.co.za
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: orbit -->
+            <div
+              class="supportOrbitWrap reveal fade"
+              aria-label="Support options"
+            >
+              <div class="supportOrbit" id="supportOrbit">
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Google Pay"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/googlepay.png"
+                    alt="Google Pay"
+                  />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="#"
+                  aria-label="Ozow"
+                  data-orbit-item
+                >
+                  <img src="../assets/img/support/ozow.png" alt="Ozow" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://pay.capitecbank.co.za/payme/VIGXRJ"
+                  aria-label="Capitec Pay"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/capitec.png"
+                    alt="Capitec Pay"
+                  />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="https://paypal.me/kanasecure"
+                  aria-label="PayPal"
+                  data-orbit-item
+                >
+                  <img src="../assets/img/support/paypal.png" alt="PayPal" />
+                </a>
+
+                <a
+                  class="supportItem"
+                  href="buymeacoffee.com/kopanoel"
+                  aria-label="Buy Me A Coffee"
+                  data-orbit-item
+                >
+                  <img
+                    src="../assets/img/support/buymeacoffee.png"
+                    alt="Buy Me A Coffee"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="footerInner container">
+        <div class="footerBottom">
+          <small>© <span id="year"></span> KANO</small>
+          <a class="footerSupport" href="../index.html#support">❤ Support Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JS + page JS -->
+    <script src="./stand-strong.js"></script>
+  </body>
+</html>

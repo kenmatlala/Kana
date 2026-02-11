@@ -1,0 +1,901 @@
+/* =========================================================
+   iGuard Kids Page
+========================================================= */
+:root {
+  --ig-grad: linear-gradient(90deg, #23d2ff, #7cff78, #ffe46a);
+  --ig-grad-soft: linear-gradient(90deg, #23d2ff, #ffe46a);
+}
+
+/* Ensure content starts below fixed topbar */
+.page {
+  padding-top: var(--topbar-h);
+}
+
+/* Shared wrapper like your UI */
+.igWrap {
+  width: 90vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.igHero {
+  padding: 34px 0 18px;
+}
+
+.igTitle {
+  margin: 0 0 18px;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.02;
+  font-size: clamp(44px, 5.2vw, 78px);
+  text-align: left;
+}
+
+/* gradient letters for big title */
+.igTitle .letter {
+  background: var(--ig-grad-soft);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Top row */
+.igTopRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.igIconWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.igIcon {
+  width: 190px;
+  height: 190px;
+  border-radius: 28px;
+  object-fit: cover;
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.55);
+}
+
+.igWhatTitle {
+  margin: 4px 0 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.igWhatTitle .letter {
+  background: var(--ig-grad);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.igWhatText {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.55;
+  opacity: 0.95;
+}
+
+.igPara {
+  margin: 18px 0 0;
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+/* Download */
+.igDownload {
+  margin: 22px auto 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #0b0b0b;
+
+  background: var(--ig-grad);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 220ms ease,
+    background-position 650ms ease;
+}
+
+.igDownload:hover {
+  transform: translateY(-2px);
+  background-position: 100% 50%;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.42);
+}
+
+.igDownloadIcon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.14);
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+.igHIW {
+  padding: 26px 0 28px;
+  text-align: center;
+}
+
+.igHIWTitle {
+  margin: 10px 0 6px;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.igGradTitle {
+  background: linear-gradient(90deg, #23d2ff, #7cff78);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.igGradTitle2 {
+  background: linear-gradient(90deg, #7cff78, #b05cff);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.igHIWSub {
+  margin: 0 0 18px;
+  font-size: 18px;
+  opacity: 0.92;
+}
+
+.igFrame,
+.igThumbFrame,
+.igModalFrame {
+  border-radius: 20px;
+  padding: 8px;
+  background: var(--ig-grad);
+  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.45);
+}
+
+.igFrame {
+  width: min(980px, 90vw);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.igVideoWrap {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.igVideo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* =========================
+   SCREENSHOTS
+========================= */
+.igShots {
+  padding: 22px 0 74px;
+  text-align: center;
+}
+
+.igShotsTitle {
+  margin: 10px 0 6px;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.igShotsGrad {
+  background: linear-gradient(90deg, #6cff4a, #b05cff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.igShotsGrad2 {
+  background: linear-gradient(90deg, #b05cff, #6cff4a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.igShotsSub {
+  margin: 0 0 22px;
+  font-size: 18px;
+  opacity: 0.92;
+}
+
+.igGrid {
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px 46px;
+  align-items: start;
+}
+
+/* Card */
+.igCard {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  transition: transform 180ms ease;
+}
+
+.igCard:hover {
+  transform: translateY(-3px);
+}
+
+.igCardTitle {
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+
+.igThumbFrame {
+  width: 100%;
+  max-width: 300px;
+}
+
+.igThumbFrame img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.igCardDesc {
+  font-size: 20px;
+  opacity: 0.92;
+  line-height: 1.2;
+}
+
+/* =========================
+   MODAL (pop out)
+========================= */
+.igModal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.igModal.is-open {
+  display: block;
+}
+
+.igModalBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.igModalCard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(980px, 92vw);
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+
+  background: rgba(10, 10, 10, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.65);
+}
+
+.igClose {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.igModalFrame {
+  padding: 10px;
+  border-radius: 22px;
+}
+
+.igModalFrame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+.igModalText {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.igModalTitle {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.igModalDesc {
+  margin-top: 6px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* =========================
+   MOBILE (flex + centered)
+========================= */
+@media (max-width: 980px) {
+  .igWrap {
+    width: 92vw;
+  }
+
+  .igTitle {
+    text-align: center;
+  }
+
+  .igTopRow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .igPara {
+    text-align: center;
+  }
+
+  .igGrid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .igThumbFrame {
+    max-width: 340px;
+  }
+}
+
+/* ============================
+===============================
+   CONTACT SECTION (KANA)
+==============================
+============================ */
+.contactSection {
+  padding: 84px 0;
+}
+
+.contactWrap {
+  padding-inline: clamp(14px, 2.2vw, 34px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vw, 34px);
+}
+
+.contactHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Heading uses your existing .js-pop-heading splitter + reveal pop */
+.contactHeading {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.02;
+  font-size: clamp(52px, 6.5vw, 98px);
+}
+
+/* Make the split letters render with gradient (like product headings) */
+.contactHeading .letter {
+  display: inline-block;
+  background: var(--grad-hot);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transform: translateY(14px) scale(0.92);
+  will-change: transform, opacity, background-position;
+}
+
+.contactSub {
+  margin: 0;
+  opacity: 0.92;
+  font-size: 18px;
+  font-style: italic;
+  max-width: 62ch;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 44px);
+  align-items: center;
+}
+
+/* FORM CARD */
+.contactFormCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactForm {
+  width: min(520px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldLabel {
+  font-family: var(--heading-font);
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0.95;
+  text-align: center;
+}
+
+.fieldInput {
+  width: 100%;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 122, 122, 0.95);
+  background: rgba(255, 255, 255, 0.95);
+  color: #140000;
+  padding: 16px 18px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+}
+
+.fieldInput:focus {
+  border-color: rgba(255, 43, 43, 1);
+  box-shadow: 0 18px 55px rgba(255, 43, 43, 0.22);
+}
+
+.fieldTextArea {
+  border-radius: 22px;
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* SUBMIT */
+.contactSubmit {
+  border: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 14px 34px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #140000;
+  background: var(--grad-hot);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  box-shadow: 0 14px 40px rgba(255, 43, 43, 0.25);
+  transition:
+    transform 180ms ease,
+    box-shadow 220ms ease,
+    background-position 600ms ease;
+}
+
+.contactSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 55px rgba(255, 43, 43, 0.32);
+  background-position: 100% 50%;
+}
+
+.contactMedia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* CLICKABLE VIDEO */
+.suggestionLink {
+  display: block;
+  width: min(420px, 88vw);
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  transform: translateZ(0);
+}
+
+.suggestionVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 1440x1440 fits perfectly */
+  object-position: center;
+  display: block;
+}
+
+/* Email line */
+.contactEmail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+.mailDot {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 43, 43, 0.18);
+  border: 1px solid rgba(255, 43, 43, 0.35);
+}
+
+.mailLink {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.mailLink:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 980px) {
+  .contactSection {
+    padding: 54px 0;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contactForm {
+    width: min(520px, 100%);
+  }
+
+  .contactEmail {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ===============================
+==================================
+   SUPPORT SECTION
+==================================
+================================ */
+.supportSection {
+  padding: 84px 0;
+}
+
+.supportWrap {
+  padding-inline: clamp(14px, 2.2vw, 34px);
+}
+
+/* Use a tighter, controlled row width like your topbarInner */
+.supportRow {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(22px, 4vw, 72px);
+}
+
+/* LEFT column */
+.supportLeft {
+  flex: 1 1 640px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.supportHeading {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.02;
+  font-size: clamp(52px, 6.5vw, 98px);
+}
+
+.supportSub {
+  margin: 0;
+  opacity: 0.92;
+  font-size: 18px;
+  font-style: italic;
+  max-width: 62ch;
+}
+
+.supportBody {
+  margin: 18px 0 0;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.92;
+  max-width: 60ch;
+}
+
+.supportEmail {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.supportMailDot {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.supportMailLink {
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.supportMailLink:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT column */
+.supportOrbitWrap {
+  flex: 0 0 clamp(360px, 42vw, 620px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.supportOrbit {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+
+  /* subtle focus glow */
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0) 62%
+  );
+}
+
+.supportItem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: clamp(88px, 9.5vw, 122px);
+  height: clamp(88px, 9.5vw, 122px);
+  border-radius: 999px;
+  background: #fff;
+  border: 6px solid rgba(255, 43, 43, 0.95);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+
+  transform: translate(-50%, -50%) translate(var(--x, 0px), var(--y, 0px))
+    rotate(var(--r, 0deg));
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+  will-change: transform;
+}
+
+.supportItem img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.supportItem:hover {
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%) translate(var(--x, 0px), var(--y, 0px))
+    rotate(var(--r, 0deg)) scale(1.04);
+}
+
+.supportHint {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+/* ===============================
+   SUPPORT — MOBILE (CENTER + CONTROLLED SPACING)
+================================ */
+@media (max-width: 980px) {
+  .supportSection {
+    padding: 74px 0 48px;
+  }
+
+  .supportRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  /* remove margin stacking + add controlled spacing */
+  .supportLeft {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .supportLeft > * {
+    margin-bottom: 0;
+  }
+
+  .supportSub {
+    margin-bottom: 6px;
+    max-width: 44ch;
+  }
+
+  /* override desktop margin-top (18px) */
+  .supportBody {
+    margin-top: 0;
+    margin-bottom: 10px;
+    max-width: 46ch;
+  }
+
+  .supportEmail {
+    margin-top: 0;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+
+  .supportOrbitWrap {
+    width: 100%;
+    margin-top: 8px;
+    gap: 10px;
+  }
+}
+
+/* Small phones: orbit becomes a neat centered grid + TIGHTER GAPS */
+@media (max-width: 520px) {
+  /* smaller section padding = removes “dead space” */
+  .supportSection {
+    padding: 46px 0 28px;
+  }
+
+  /* reduce vertical separation between text and icon block */
+  .supportRow {
+    gap: 10px;
+  }
+
+  .supportBody {
+    margin-bottom: 8px;
+  }
+
+  .supportEmail {
+    margin-bottom: 6px;
+  }
+
+  .supportOrbitWrap {
+    margin-top: 0;
+    gap: 6px;
+  }
+
+  .supportOrbit {
+    width: min(420px, 92vw);
+    height: auto;
+    aspect-ratio: auto;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 4px;
+  }
+
+  .supportOrbit.is-grid .supportItem {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none !important;
+  }
+}
+/* ===============================
+   SUPPORT — PULL ICONS CLOSER TO DIVIDER
+================================ */
+@media (max-width: 520px) {
+  /* this is the key move */
+  .supportOrbitWrap {
+    margin-top: -10px; /* pulls icons upward */
+  }
+
+  /* keep grid tight */
+  .supportOrbit {
+    padding-top: 0;
+    gap: 8px;
+  }
+}
